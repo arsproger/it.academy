@@ -5,15 +5,15 @@ import java.util.Scanner;
 public class HomeWork4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите число от 1 до 7:");
+        System.out.println("Введите число:");
         int num = scanner.nextInt();
-        switch(num) {
-                case 1, 3, 5, 7:
-                    System.out.println("Число нечетное");
-                    break;
-                case 2, 4, 6:
-                    System.out.println("Число четное");
-                    break;
+        if(num % 2 == 0) {
+            System.out.println("Число четное");
         }
+        else {
+            System.out.println("Число нечетное");
+        }
+
     }
+
 }

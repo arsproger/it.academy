@@ -13,6 +13,5 @@ public class HomeWork1 {
         System.out.println(a + "*" + b + "*" + c + " = " + (a * b * c));
         double res = (double)(a + b + c) / 3;
         System.out.printf("(" + a + "+" + b + "+" + c + ") / 3 = %.3f", res);
-
     }
 }
