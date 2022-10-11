@@ -1,6 +1,4 @@
-package freeCode.extendsss;
-
-import java.util.Scanner;
+package practice.OOP.extendsss;
 
 public class CardCount extends BankAccount{
     @Override

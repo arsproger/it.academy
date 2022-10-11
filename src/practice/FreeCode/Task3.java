@@ -1,4 +1,4 @@
-package practice;
+package practice.FreeCode;
 /* Создать массив типа String размером 3х6.
 И записать в него значения:
 a1  a2  a3  a4  a5  a6

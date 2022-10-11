@@ -1,4 +1,4 @@
-package freeCode.extendsss;
+package practice.OOP.extendsss;
 
 import java.util.Scanner;
 
