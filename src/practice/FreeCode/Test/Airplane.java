@@ -1,4 +1,4 @@
-package freeCode;
+package practice.FreeCode.Test;
 
 public class Airplane {
     private String producer;

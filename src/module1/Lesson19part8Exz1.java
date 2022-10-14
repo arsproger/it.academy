@@ -2,7 +2,7 @@ package module1;
 
 public class Lesson19part8Exz1 {
     public static void main(String[] args) {
-        printStar(5);
+        printStar(7);
         System.out.println();
         for (int i = 0; i < 10; i++) {
             printStar(10);

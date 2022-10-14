@@ -1,4 +1,4 @@
-package freeCode;
+package practice.FreeCode.Test;
 
 import java.util.Random;
 

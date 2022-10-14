@@ -1,4 +1,4 @@
-package freeCode;
+package practice.FreeCode.Test;
 
 public class Test {
     public static void main(String[] args) {

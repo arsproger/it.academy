@@ -18,8 +18,8 @@ public class Lesson19part7Exz1 {
             System.out.println(Arrays.toString(array[i]));
         }
         System.out.println("Среднее арифметическое значение всей матрицы: " + count);
-        int[] array2 = new int[5];
-        int count2 = 0;
+        double[] array2 = new double[5];
+        double count2 = 0;
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
                 count2 += array[i][j];
