@@ -21,7 +21,7 @@ public class HomeWork7 {
             count = array[i];
             for (int j = 0; j < array.length; j++) {
                 if (i == j) {
-                    break;
+                    continue;
                 }
                 count2 = array[j];
                 if(count == count2)

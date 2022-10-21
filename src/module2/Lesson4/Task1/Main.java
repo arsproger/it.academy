@@ -1,6 +1,6 @@
-package module2;
+package module2.Lesson4.Task1;
 
-public class Lesson1 {
+public class Main {
     public static void main(String[] args) {
 
     }
