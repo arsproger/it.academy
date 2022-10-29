@@ -27,9 +27,9 @@ public class Ssd {
 
     @Override
     public String toString() {
-        return "Ssd{" +
-                "size=" + size +
-                ", speed=" + speed +
+        return "Ссд{" +
+                "Размер=" + size +
+                ", Скорость=" + speed +
                 '}';
     }
 }

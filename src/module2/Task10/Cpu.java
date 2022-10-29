@@ -37,10 +37,10 @@ public class Cpu {
 
     @Override
     public String toString() {
-        return "Cpu{" +
-                "name='" + name + '\'' +
-                ", chastota='" + chastota + '\'' +
-                ", amountYader=" + amountYader +
+        return "Процессор{" +
+                "Имя='" + name + '\'' +
+                ", Частота='" + chastota + '\'' +
+                ", Колво ядер=" + amountYader +
                 '}';
     }
 }

@@ -27,9 +27,9 @@ public class OperatingSystem {
 
     @Override
     public String toString() {
-        return "OperatingSystem{" +
-                "title='" + title + '\'' +
-                ", version=" + version +
+        return "Операционная система{" +
+                "Титл='" + title + '\'' +
+                ", Версия=" + version +
                 '}';
     }
 }

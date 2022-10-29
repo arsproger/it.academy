@@ -47,11 +47,11 @@ public class Notebook {
 
     @Override
     public String toString() {
-        return "Notebook{" +
-                "cpu=" + cpu +
-                ", operatingSystem=" + operatingSystem +
-                ", ram=" + ram +
-                ", ssd=" + ssd +
-                '}';
+        return "Ноутбук[" +
+                "Процессор= " + cpu +
+                ", Операционная система =" + operatingSystem +
+                ", Оперативная память =" + ram +
+                ", Ссд =" + ssd +
+                ']';
     }
 }

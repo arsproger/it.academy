@@ -27,9 +27,9 @@ public class Ram {
 
     @Override
     public String toString() {
-        return "Ram{" +
-                "size=" + size +
-                ", model='" + model + '\'' +
+        return "Операционная память{" +
+                "Размер=" + size +
+                ", Модель='" + model + '\'' +
                 '}';
     }
 }
