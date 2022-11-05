@@ -1,7 +1,7 @@
 package home.HomeWork11;
 
 public class Circle {
-    private final double pi = Math.PI;
+    private final double PI = Math.PI;
     private double radius;
 
     public Circle(double radius) {
@@ -9,7 +9,7 @@ public class Circle {
     }
 
     public void areaOfCircle() {
-        System.out.printf("Площадь круга: %.2f\n", pi * this.radius * this.radius);
+        System.out.printf("Площадь круга: %.2f\n", PI * Math.pow(this.radius, 2));
     }
 
     public static void circumference(double radius) {
@@ -17,7 +17,7 @@ public class Circle {
         System.out.printf("Длина окружности: %.2f\n", 2 * pi * radius);
     }
 
-    public double getPi() { return pi; }
+    public double getPI() { return PI; }
 
     public double getRadius() { return radius; }
 

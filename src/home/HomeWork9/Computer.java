@@ -28,7 +28,7 @@ public class Computer {
                 "\nDiagonal: " + display.getDiagonal() + "\nManufacturer display: " + display.getManufacturer() +
                 "\nMatrix type: " + display.getMatrixType() +
                 "\nLayout keyboard: " + Arrays.toString(keyboard.getLayoutKeyboard()) +
-                "\nAdditionald digits: " + keyboard.isAdditionalDigits() + "\nBack light: " + keyboard.isBacklight() +
+                "\nAdditional digits: " + keyboard.isAdditionalDigits() + "\nBack light: " + keyboard.isBacklight() +
                 "\nMemory: " + ram.getMemory() + "\nManufacturer ram: " + ram.getManufacturer() +
                 "\nAmount disk: " + ssd.amountDisk + "\nMemory size: " + ssd.memorySize +
                 "\nId port: " + usbPort.getIdPort() + "\nType port: " + usbPort.getTypePort());

@@ -13,5 +13,6 @@ public class Main {
         char symbolForTriangle = scanner.next().charAt(0);
         Triangle triangle = new Triangle(symbolForTriangle);
         triangle.draw();
+        scanner.close();
     }
 }
