@@ -12,12 +12,12 @@ public class Rectangle extends Figure{
     @Override
     public void square() {
         double res = this.length * this.width;
-        System.out.printf("Площадь прямоугольника: %.2f", res);
+        System.out.printf("Площадь прямоугольника: %.2f\n", res);
     }
 
     @Override
     public void perimeter() {
-        double res = Math.pow(this.length,2) * Math.pow(this.width, 2);
-        System.out.printf("Периметр прямоугольника: %.2f", res);
+        double res = (this.length * 2) + (this.width * 2);
+        System.out.printf("Периметр прямоугольника: %.2f\n", res);
     }
 }

@@ -1,5 +1,7 @@
 package home.HomeWork12;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
          Passenger passenger1 = new Passenger(15, "Aibek", 501);
@@ -14,5 +16,10 @@ public class Main {
          Bus.passengerList();
          Bus.salaryPerFlight();
          Bus.searchPassenger("Arsen");
+//         int[] array = new int[1];
+//         array[0] = 5;
+//         array = Arrays.copyOf(array, array.length + 1);
+//         array[1] = 3;
+//         System.out.println(Arrays.toString(array));
     }
 }

@@ -10,12 +10,12 @@ public class Circle extends Figure{
     @Override
     public void square() {
         double res = PI * (Math.pow(this.radius, 2));
-        System.out.printf("Площадь круга: %.2f", res);
+        System.out.printf("Площадь круга: %.2f\n", res);
     }
 
     @Override
     public void perimeter() {
         double res = 2 * PI * this.radius;
-        System.out.printf("Периметр круга: %.2f", res);
+        System.out.printf("Периметр круга: %.2f\n", res);
     }
 }

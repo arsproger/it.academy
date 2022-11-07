@@ -10,12 +10,12 @@ public class Triangle extends Figure{
     @Override
     public void square() {
         double res = (Math.pow(this.length,2) * Math.sqrt(3)) / 4;
-        System.out.printf("Площадь треугольника: %.2f", res);
+        System.out.printf("Площадь треугольника: %.2f\n", res);
     }
 
     @Override
     public void perimeter() {
-        double res = Math.pow(this.length, 3);
-        System.out.printf("Периметр треугольника: %.2f", res);
+        double res = this.length * 3;
+        System.out.printf("Периметр треугольника: %.2f\n", res);
     }
 }
