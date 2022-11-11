@@ -1,11 +1,11 @@
 package home.HomeWork12;
 
-import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Bus {
     private int numberOfSeats;
     private static int amountPassenger;
-    private static ArrayList<Passenger> arrayList = new ArrayList<>();
+    static Passenger[] array = new Passenger[0];
 
     public Bus(int numberOfSeats) {
         this.numberOfSeats = numberOfSeats;
@@ -22,27 +22,28 @@ public class Bus {
     }
 
     public static void passengerList() {
-        for (Passenger passenger : arrayList) {
+        for (Passenger passenger : array) {
             System.out.println(passenger);
         }
     }
     public String addPassenger(Passenger passenger) {
         if(amountPassenger >= numberOfSeats) return "Нету мест!";
         else {
-            arrayList.add(passenger);
+            array = Arrays.copyOf(array, array.length + 1);
+            array[array.length - 1] = passenger;
             amountPassenger++;
             return "Пассажир добавлен!";
         }
     }
     public static void searchPassenger(String name) {
-         for (Passenger passenger : arrayList) {
+         for (Passenger passenger : array) {
              if(passenger.getName().equals(name))
                  System.out.println(passenger);
          }
     }
     public static void salaryPerFlight() {
         double salary = 0;
-        for (Passenger passenger : arrayList) {
+        for (Passenger passenger : array) {
             salary += passenger.getPrice();
         }
         System.out.println("Заработок за рейс: " + salary);
