@@ -18,8 +18,9 @@ public class MainMenu {
                     "\n1) Добавление студента в группу" +
                     "\n2) Поиск по названию группы и вывод учеников этой группы" +
                     "\n3) Просмотр всех групп и их учеников");
-            System.out.print("\nНомер меню: \n");
+            System.out.print("\nНомер меню: ");
             int number = scanner.nextInt();
+            System.out.println();
             if (number == 1) {
                 System.out.print("Введите название группы: ");
                 String nameGroup = scanner.next();

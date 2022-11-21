@@ -31,9 +31,17 @@ public class Group {
             if(groupList.name.equals(nameGroup))
                 group = groupList;
         }
+        if(group == null) {
+            System.out.println("Нет такой группы!");
+            return false;
+        }
         for(Student studentList : Group.studentsList) {
             if(studentList.getName().equals(studentName))
                 student = studentList;
+        }
+        if(student == null) {
+            System.out.println("Нет такого студента!");
+            return false;
         }
         for (int i = 0; i < group.students.length; i++) {
             if(group.students[i] == null) {
