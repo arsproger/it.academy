@@ -42,7 +42,6 @@ public class MainMenu {
             else {
                 System.out.println("¬ведите номер с меню!");
             }
-
         }
     }
 }
