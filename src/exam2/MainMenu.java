@@ -17,7 +17,8 @@ public class MainMenu {
             System.out.println("\nГлавное меню:" +
                     "\n1) Добавление студента в группу" +
                     "\n2) Поиск по названию группы и вывод учеников этой группы" +
-                    "\n3) Просмотр всех групп и их учеников");
+                    "\n3) Просмотр всех групп и их учеников" +
+                    "\n0) Выход с главного меню");
             System.out.print("\nНомер меню: ");
             int number = scanner.nextInt();
             System.out.println();
@@ -33,7 +34,12 @@ public class MainMenu {
                 Group.searchGroupStudent(nameGroup);
             } else if (number == 3) {
                 Group.viewAllGroupAndStudent();
-            } else {
+            }
+              else if(number == 0) {
+                System.out.println("Вы вышли с главного меню!");
+                    break;
+                }
+            else {
                 System.out.println("Введите номер с меню!");
             }
 

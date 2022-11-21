@@ -79,13 +79,20 @@ public class Group {
 
     // Просмотр всех групп и их учеников
     public static void viewAllGroupAndStudent() {
-        System.out.print("Группы: ");
         for(Group group : groupsList) {
-            System.out.print(group.name + " | ");
-        }
-        System.out.print("\nУченики: ");
-        for(Student student : studentsList) {
-            System.out.print(student.getName() + " | ");
+            boolean res = false;
+            System.out.print("Группа: " + group.name +
+                    "\nСтуденты: ");
+            for(Student student : group.students) {
+                if(student != null) {
+                    System.out.print(student.getName() + " | ");
+                    res = true;
+                }
+            }
+            if(!res) {
+                System.out.print("У группы " + group.name + " еще нет студентов!");
+            }
+            System.out.println();
         }
     }
 
@@ -113,13 +120,4 @@ public class Group {
         return studentsList;
     }
 
-    @Override
-    public String toString() {
-        return "Group{" +
-                "idGroup=" + idGroup +
-                ", name='" + name + '\'' +
-                ", amountStudent=" + amountStudent +
-                ", students=" + Arrays.toString(students) +
-                '}';
-    }
 }

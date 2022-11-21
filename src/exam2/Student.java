@@ -9,10 +9,4 @@ public class Student extends Group {
         Group.getStudentsList().add(this);
     }
 
-    @Override
-    public String toString() {
-        return "Student{}";
-    }
-
-
 }
