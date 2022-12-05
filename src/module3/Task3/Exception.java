@@ -2,7 +2,7 @@ package module3.Task3;
 
 import java.util.Scanner;
 
-public class Main {
+public class Exception {
     public static void main(String[] args) {
         try {
             Scanner scanner = new Scanner(System.in);

@@ -23,31 +23,40 @@ public class TicTackToe {
                 int num = scanner.nextInt();
                 switch (num) {
                     case 1:
-                        array[0][0] = 'X';
+                        if(array[0][0] == 1)
+                            array[0][0] = 'X';
                         break;
                     case 2:
-                        array[0][2] = 'X';
+                        if(array[0][2] == 2)
+                            array[0][2] = 'X';
                         break;
                     case 3:
-                        array[0][4] = 'X';
+                        if(array[0][4] == 3)
+                            array[0][4] = 'X';
                         break;
                     case 4:
-                        array[2][0] = 'X';
+                        if(array[2][0] == 4)
+                            array[2][0] = 'X';
                         break;
                     case 5:
-                        array[2][2] = 'X';
+                        if(array[2][2] == 5)
+                            array[2][2] = 'X';
                         break;
                     case 6:
-                        array[2][4] = 'X';
+                        if(array[2][4] == 6)
+                            array[2][4] = 'X';
                         break;
                     case 7:
-                        array[4][0] = 'X';
+                        if(array[4][0] == 7)
+                            array[4][0] = 'X';
                         break;
                     case 8:
-                        array[4][2] = 'X';
+                        if(array[4][2] == 8)
+                            array[4][2] = 'X';
                         break;
                     case 9:
-                        array[4][4] = 'X';
+                        if(array[4][4] == 9)
+                            array[4][4] = 'X';
                         break;
                     default:
                         System.out.println("Error, print number 1-9");
@@ -59,31 +68,40 @@ public class TicTackToe {
                 int num2 = scanner.nextInt();
                 switch (num2) {
                     case 1:
-                        array[0][0] = 'O';
+                        if(array[0][0] == 1)
+                            array[0][0] = 'O';
                         break;
                     case 2:
-                        array[0][2] = 'O';
+                        if(array[0][2] == 2)
+                            array[0][2] = 'O';
                         break;
                     case 3:
-                        array[0][4] = 'O';
+                        if(array[0][4] == 3)
+                            array[0][4] = 'O';
                         break;
                     case 4:
-                        array[2][0] = 'O';
+                        if(array[2][0] == 4)
+                            array[2][0] = 'O';
                         break;
                     case 5:
-                        array[2][2] = 'O';
+                        if(array[2][2] == 5)
+                            array[2][2] = 'O';
                         break;
                     case 6:
-                        array[2][4] = 'O';
+                        if(array[2][4] == 6)
+                            array[2][4] = 'O';
                         break;
                     case 7:
-                        array[4][0] = 'O';
+                        if(array[4][0] == 7)
+                            array[4][0] = 'O';
                         break;
                     case 8:
-                        array[4][2] = 'O';
+                        if(array[4][2] == 8)
+                            array[4][2] = 'O';
                         break;
                     case 9:
-                        array[4][4] = 'O';
+                        if(array[4][4] == 9)
+                            array[4][4] = 'O';
                         break;
                     default:
                         System.out.println("Error, print number 1-9");
