@@ -1,6 +1,6 @@
-package shmodule1;
+package home.HomeWork21;
 
-public class Lesson11 {
+public class Main {
     public static void main(String[] args) {
 
     }
