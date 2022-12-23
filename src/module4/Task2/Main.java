@@ -1,42 +1,36 @@
 package module4.Task2;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.Random;
-import java.util.Scanner;
+import java.util.LinkedList;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
-        Scanner scanner = new Scanner(System.in);
+    public static void main(String[] args) {
+        LinkedList<Car> cars = new LinkedList<>();
+        Car ferrari = new Car("Ferrari 360 Spider");
+        Car bugatti = new Car("Bugatti Veyron");
+        Car lambo = new Car("Lamborghini Diablo");
+        Car ford = new Car("Ford Mondeo");
+        Car fiat = new Car("Fiat Ducato");
 
-        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-        System.out.print("Enter username: ");
-        String user = in.readLine();
+        cars.add(ferrari);
+        cars.add(bugatti);
+        cars.add(lambo);
+        System.out.println(cars);
 
-        Thread hide = new PasswordsHider("Enter password: ");
-        hide.start();
-        String pass = scanner.nextLine();
-        hide.interrupt();
+        cars.addFirst(ford);
+        cars.addLast(fiat);
+        System.out.println(cars);
+    }
+}
+class Car {
+    String name;
+    public Car(String name) {
+        this.name = name;
     }
 
-    private static class PasswordsHider extends Thread {
-        public PasswordsHider(String prompt) {
-            super("Hiding passwords thread");
-            System.out.print(prompt);
-        }
-
-        @Override
-        public void run() {
-            while (!isInterrupted()) {
-                System.out.print("\010");
-                try {
-                    Thread.sleep(1);
-                } catch (InterruptedException e) {
-                    //e.printStackTrace();
-                }
-            }
-        }
+    @Override
+    public String toString() {
+        return "Car{" +
+                "name='" + name + '\'' +
+                '}';
     }
 }

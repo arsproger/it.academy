@@ -61,5 +61,4 @@ class Employee implements Comparable<Employee>{
           }
           return res;
     }
-
 }
