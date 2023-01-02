@@ -15,7 +15,7 @@ public class Task3 {
         list.add(emp2);
         list.add(emp3);
         System.out.println("До сортировки:\n" + list);
-        Collections.sort(list, new salaryComparator());
+        Collections.sort(list, new idComparator());
         System.out.println("\nПосле сортировки:\n" + list);
     }
 
