@@ -4,7 +4,7 @@
     <root id="1">
       <IntrospectionLevel>3</IntrospectionLevel>
       <ServerVersion>18.0.0.0.0</ServerVersion>
-      <TablespacesHash>25633939265</TablespacesHash>
+      <TablespacesHash>25056401255</TablespacesHash>
     </root>
     <schema id="2" parent="1" name="ANONYMOUS">
       <ObjectId>62</ObjectId>
@@ -49,11 +49,11 @@
       <CommentsHash>1994909609377</CommentsHash>
       <CreatedTimestamp>2022-11-09.04:41:07</CreatedTimestamp>
       <Current>1</Current>
-      <IntrospectionL1Timestamp>2022-12-30.02:26:47</IntrospectionL1Timestamp>
-      <IntrospectionL2Timestamp>2022-12-30.02:26:47</IntrospectionL2Timestamp>
-      <IntrospectionL3Timestamp>2022-12-30.02:26:47</IntrospectionL3Timestamp>
+      <IntrospectionL1Timestamp>2023-01-03.19:01:35</IntrospectionL1Timestamp>
+      <IntrospectionL2Timestamp>2023-01-03.19:01:35</IntrospectionL2Timestamp>
+      <IntrospectionL3Timestamp>2023-01-03.19:01:35</IntrospectionL3Timestamp>
       <IntrospectionVersion>200820</IntrospectionVersion>
-      <ModifiedTimestamp>2022-12-30.02:26:15</ModifiedTimestamp>
+      <ModifiedTimestamp>2023-01-03.19:01:35</ModifiedTimestamp>
       <ObjectId>101</ObjectId>
     </schema>
     <schema id="16" parent="1" name="LBACSYS">
@@ -454,28 +454,56 @@
       <ObjectId>73579</ObjectId>
       <SequenceIdentity>1(3300)+100..9900</SequenceIdentity>
     </sequence>
-    <sequence id="86" parent="15" name="SEQ_TABLE">
+    <sequence id="86" parent="15" name="PHONE_SEQ">
+      <CreatedTimestamp>2023-01-03.18:52:19</CreatedTimestamp>
+      <DetailsLevel>2</DetailsLevel>
+      <ModifiedTimestamp>2023-01-03.18:52:19</ModifiedTimestamp>
+      <ObjectId>76485</ObjectId>
+      <SequenceIdentity>1(1)</SequenceIdentity>
+    </sequence>
+    <sequence id="87" parent="15" name="ROOMS_PHID">
+      <CreatedTimestamp>2023-01-03.19:01:35</CreatedTimestamp>
+      <DetailsLevel>2</DetailsLevel>
+      <ModifiedTimestamp>2023-01-03.19:01:35</ModifiedTimestamp>
+      <ObjectId>76493</ObjectId>
+      <SequenceIdentity>1(10)</SequenceIdentity>
+    </sequence>
+    <sequence id="88" parent="15" name="ROOMS_SEQ">
+      <CreatedTimestamp>2023-01-03.19:01:33</CreatedTimestamp>
+      <DetailsLevel>2</DetailsLevel>
+      <ModifiedTimestamp>2023-01-03.19:01:33</ModifiedTimestamp>
+      <ObjectId>76492</ObjectId>
+      <SequenceIdentity>1(1)</SequenceIdentity>
+    </sequence>
+    <sequence id="89" parent="15" name="SEQ_TABLE">
       <CreatedTimestamp>2022-12-30.02:13:35</CreatedTimestamp>
       <DetailsLevel>2</DetailsLevel>
       <ModifiedTimestamp>2022-12-30.02:13:35</ModifiedTimestamp>
       <ObjectId>76050</ObjectId>
       <SequenceIdentity>1(21)</SequenceIdentity>
     </sequence>
-    <table id="87" parent="15" name="ARSEN">
+    <sequence id="90" parent="15" name="USER_SEQ">
+      <CreatedTimestamp>2023-01-03.18:53:35</CreatedTimestamp>
+      <DetailsLevel>2</DetailsLevel>
+      <ModifiedTimestamp>2023-01-03.18:53:35</ModifiedTimestamp>
+      <ObjectId>76487</ObjectId>
+      <SequenceIdentity>1(120)</SequenceIdentity>
+    </sequence>
+    <table id="91" parent="15" name="ARSEN">
       <CreatedTimestamp>2022-12-27.03:31:06</CreatedTimestamp>
       <DetailsLevel>3</DetailsLevel>
       <ModifiedTimestamp>2022-12-27.03:34:15</ModifiedTimestamp>
       <ObjectId>75853</ObjectId>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="88" parent="15" name="CLIENTS">
+    <table id="92" parent="15" name="CLIENTS">
       <CreatedTimestamp>2022-12-13.04:11:22</CreatedTimestamp>
       <DetailsLevel>3</DetailsLevel>
       <ModifiedTimestamp>2022-12-13.04:21:20</ModifiedTimestamp>
       <ObjectId>75478</ObjectId>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="89" parent="15" name="COUNTRIES">
+    <table id="93" parent="15" name="COUNTRIES">
       <Comment>country table. Contains 25 rows. References with locations table.</Comment>
       <CreatedTimestamp>2022-11-09.04:41:07</CreatedTimestamp>
       <DetailsLevel>3</DetailsLevel>
@@ -484,7 +512,7 @@
       <Organization>I</Organization>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="90" parent="15" name="DEPARTMENTS">
+    <table id="94" parent="15" name="DEPARTMENTS">
       <Comment>Departments table that shows details of departments where employees
          work. Contains 27 rows; references with locations, employees, and job_history tables.</Comment>
       <CreatedTimestamp>2022-11-09.04:41:08</CreatedTimestamp>
@@ -493,7 +521,7 @@
       <ObjectId>73580</ObjectId>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="91" parent="15" name="EMPLOYEES">
+    <table id="95" parent="15" name="EMPLOYEES">
       <Comment>employees table. Contains 107 rows. References with departments,
          jobs, job_history tables. Contains a self reference.</Comment>
       <CreatedTimestamp>2022-11-09.04:41:08</CreatedTimestamp>
@@ -502,7 +530,7 @@
       <ObjectId>73585</ObjectId>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="92" parent="15" name="JOBS">
+    <table id="96" parent="15" name="JOBS">
       <Comment>jobs table with job titles and salary ranges. Contains 19 rows.
          References with employees and job_history table.</Comment>
       <CreatedTimestamp>2022-11-09.04:41:08</CreatedTimestamp>
@@ -511,7 +539,7 @@
       <ObjectId>73583</ObjectId>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="93" parent="15" name="JOB_HISTORY">
+    <table id="97" parent="15" name="JOB_HISTORY">
       <Comment>Table that stores job history of the employees. If an employee
          changes departments within the job or changes jobs within the department,
          new rows get inserted into this table with old job information of the
@@ -523,7 +551,7 @@
       <ObjectId>73589</ObjectId>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="94" parent="15" name="LOCATIONS">
+    <table id="98" parent="15" name="LOCATIONS">
       <Comment>Locations table that contains specific address of a specific office,
          warehouse, and/or production site of a company. Does not store addresses /
          locations of customers. Contains 23 rows; references with the
@@ -534,7 +562,14 @@
       <ObjectId>73577</ObjectId>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="95" parent="15" name="REGIONS">
+    <table id="99" parent="15" name="PHONES">
+      <CreatedTimestamp>2023-01-03.18:51:34</CreatedTimestamp>
+      <DetailsLevel>3</DetailsLevel>
+      <ModifiedTimestamp>2023-01-03.18:51:34</ModifiedTimestamp>
+      <ObjectId>76483</ObjectId>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="100" parent="15" name="REGIONS">
       <Comment>Regions table that contains region numbers and names. Contains 4 rows; references with the Countries table.</Comment>
       <CreatedTimestamp>2022-11-09.04:41:07</CreatedTimestamp>
       <DetailsLevel>3</DetailsLevel>
@@ -542,28 +577,35 @@
       <ObjectId>73573</ObjectId>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="96" parent="15" name="SEQUENCE_TEST">
+    <table id="101" parent="15" name="ROOMS">
+      <CreatedTimestamp>2023-01-03.18:46:48</CreatedTimestamp>
+      <DetailsLevel>3</DetailsLevel>
+      <ModifiedTimestamp>2023-01-03.19:01:00</ModifiedTimestamp>
+      <ObjectId>76481</ObjectId>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="102" parent="15" name="SEQUENCE_TEST">
       <CreatedTimestamp>2022-12-30.02:12:57</CreatedTimestamp>
       <DetailsLevel>3</DetailsLevel>
       <ModifiedTimestamp>2022-12-30.02:12:57</ModifiedTimestamp>
       <ObjectId>76048</ObjectId>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="97" parent="15" name="STUDENTS">
+    <table id="103" parent="15" name="STUDENTS">
       <CreatedTimestamp>2022-12-28.01:31:24</CreatedTimestamp>
       <DetailsLevel>3</DetailsLevel>
       <ModifiedTimestamp>2022-12-28.01:31:56</ModifiedTimestamp>
       <ObjectId>76023</ObjectId>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="98" parent="15" name="TABLE_NAME">
+    <table id="104" parent="15" name="TABLE_NAME">
       <CreatedTimestamp>2022-12-28.01:18:00</CreatedTimestamp>
       <DetailsLevel>3</DetailsLevel>
       <ModifiedTimestamp>2022-12-28.01:18:00</ModifiedTimestamp>
       <ObjectId>76018</ObjectId>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <view id="99" parent="15" name="EMP_DETAILS_VIEW">
+    <view id="105" parent="15" name="EMP_DETAILS_VIEW">
       <CreatedTimestamp>2022-11-09.04:41:08</CreatedTimestamp>
       <DependsOnIds>73573,73575,73577,73580,73583,73585</DependsOnIds>
       <DetailsLevel>3</DetailsLevel>
@@ -571,7 +613,7 @@
       <ObjectId>73591</ObjectId>
       <SourceTextLength>573</SourceTextLength>
     </view>
-    <view id="100" parent="15" name="VIEW_V">
+    <view id="106" parent="15" name="VIEW_V">
       <CreatedTimestamp>2022-12-30.02:26:15</CreatedTimestamp>
       <DependsOnIds>76048</DependsOnIds>
       <DetailsLevel>3</DetailsLevel>
@@ -580,7 +622,7 @@
       <ObjectId>76053</ObjectId>
       <SourceTextLength>30</SourceTextLength>
     </view>
-    <data-file id="101" parent="39" name="C:\APP\USER\PRODUCT\18.0.0\ORADATA\XE\SYSTEM01.DBF">
+    <data-file id="107" parent="39" name="C:\APP\USER\PRODUCT\18.0.0\ORADATA\XE\SYSTEM01.DBF">
       <AutoExtensible>1</AutoExtensible>
       <AvailabilityStatus>A</AvailabilityStatus>
       <FileId>1</FileId>
@@ -591,18 +633,18 @@
       <Position>1</Position>
       <UserSize>107392</UserSize>
     </data-file>
-    <data-file id="102" parent="40" name="C:\APP\USER\PRODUCT\18.0.0\ORADATA\XE\SYSAUX01.DBF">
+    <data-file id="108" parent="40" name="C:\APP\USER\PRODUCT\18.0.0\ORADATA\XE\SYSAUX01.DBF">
       <AutoExtensible>1</AutoExtensible>
       <AvailabilityStatus>A</AvailabilityStatus>
       <FileId>3</FileId>
-      <FileSize>75520</FileSize>
+      <FileSize>76800</FileSize>
       <IncrementBy>1280</IncrementBy>
       <MaxSize>4194302</MaxSize>
       <OnlineStatus>E</OnlineStatus>
       <Position>3</Position>
-      <UserSize>75392</UserSize>
+      <UserSize>76672</UserSize>
     </data-file>
-    <data-file id="103" parent="41" name="C:\APP\USER\PRODUCT\18.0.0\ORADATA\XE\UNDOTBS01.DBF">
+    <data-file id="109" parent="41" name="C:\APP\USER\PRODUCT\18.0.0\ORADATA\XE\UNDOTBS01.DBF">
       <AutoExtensible>1</AutoExtensible>
       <AvailabilityStatus>A</AvailabilityStatus>
       <FileId>4</FileId>
@@ -613,7 +655,7 @@
       <Position>4</Position>
       <UserSize>8192</UserSize>
     </data-file>
-    <data-file id="104" parent="42" name="C:\APP\USER\PRODUCT\18.0.0\ORADATA\XE\TEMP01.DBF">
+    <data-file id="110" parent="42" name="C:\APP\USER\PRODUCT\18.0.0\ORADATA\XE\TEMP01.DBF">
       <AutoExtensible>1</AutoExtensible>
       <FileId>1</FileId>
       <FileSize>4224</FileSize>
@@ -622,7 +664,7 @@
       <Position>1</Position>
       <UserSize>4096</UserSize>
     </data-file>
-    <data-file id="105" parent="43" name="C:\APP\USER\PRODUCT\18.0.0\ORADATA\XE\USERS01.DBF">
+    <data-file id="111" parent="43" name="C:\APP\USER\PRODUCT\18.0.0\ORADATA\XE\USERS01.DBF">
       <AutoExtensible>1</AutoExtensible>
       <AvailabilityStatus>A</AvailabilityStatus>
       <FileId>7</FileId>
@@ -633,52 +675,52 @@
       <Position>7</Position>
       <UserSize>512</UserSize>
     </data-file>
-    <argument id="106" parent="80" name="P_EMP_ID">
+    <argument id="112" parent="80" name="P_EMP_ID">
       <DataType>JOB_HISTORY.EMPLOYEE_ID() %TYPE|0cs</DataType>
       <Position>1</Position>
     </argument>
-    <argument id="107" parent="80" name="P_START_DATE">
+    <argument id="113" parent="80" name="P_START_DATE">
       <DataType>JOB_HISTORY.START_DATE() %TYPE|0cs</DataType>
       <Position>2</Position>
     </argument>
-    <argument id="108" parent="80" name="P_END_DATE">
+    <argument id="114" parent="80" name="P_END_DATE">
       <DataType>JOB_HISTORY.END_DATE() %TYPE|0cs</DataType>
       <Position>3</Position>
     </argument>
-    <argument id="109" parent="80" name="P_JOB_ID">
+    <argument id="115" parent="80" name="P_JOB_ID">
       <DataType>JOB_HISTORY.JOB_ID() %TYPE|0cs</DataType>
       <Position>4</Position>
     </argument>
-    <argument id="110" parent="80" name="P_DEPARTMENT_ID">
+    <argument id="116" parent="80" name="P_DEPARTMENT_ID">
       <DataType>JOB_HISTORY.DEPARTMENT_ID() %TYPE|0cs</DataType>
       <Position>5</Position>
     </argument>
-    <column id="111" parent="87" name="NAME">
+    <column id="117" parent="91" name="NAME">
       <DataType>VARCHAR2(15 byte)|0s</DataType>
       <Position>1</Position>
     </column>
-    <column id="112" parent="87" name="AGE">
+    <column id="118" parent="91" name="AGE">
       <DataType>NUMBER(*)|0s</DataType>
       <DefaultExpression>18</DefaultExpression>
       <Position>2</Position>
     </column>
-    <column id="113" parent="88" name="CLIENT_ID">
+    <column id="119" parent="92" name="CLIENT_ID">
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <SequenceName>ISEQ$$_75478</SequenceName>
     </column>
-    <column id="114" parent="88" name="LOGIN">
+    <column id="120" parent="92" name="LOGIN">
       <DataType>VARCHAR2(50 byte)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="115" parent="88" name="PASSWORD">
+    <column id="121" parent="92" name="PASSWORD">
       <DataType>VARCHAR2(50 byte)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <index id="116" parent="88" name="SYS_C007816">
+    <index id="122" parent="92" name="SYS_C007816">
       <ColNames>CLIENT_ID</ColNames>
       <CreatedTimestamp>2022-12-13.04:11:22</CreatedTimestamp>
       <ModifiedTimestamp>2022-12-13.04:11:22</ModifiedTimestamp>
@@ -687,43 +729,43 @@
       <Unique>1</Unique>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <key id="117" parent="88" name="SYS_C007816">
+    <key id="123" parent="92" name="SYS_C007816">
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2022-12-13.04:11:22</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>SYS_C007816</UnderlyingIndexName>
     </key>
-    <check id="118" parent="89" name="COUNTRY_ID_NN">
+    <check id="124" parent="93" name="COUNTRY_ID_NN">
       <ColNames>COUNTRY_ID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2022-11-09.04:41:07</ModifiedTimestamp>
       <Predicate>&quot;COUNTRY_ID&quot; IS NOT NULL</Predicate>
     </check>
-    <column id="119" parent="89" name="COUNTRY_ID">
+    <column id="125" parent="93" name="COUNTRY_ID">
       <Comment>Primary key of countries table.</Comment>
       <DataType>CHAR(2 byte)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="120" parent="89" name="COUNTRY_NAME">
+    <column id="126" parent="93" name="COUNTRY_NAME">
       <Comment>Country name</Comment>
       <DataType>VARCHAR2(40 byte)|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="121" parent="89" name="REGION_ID">
+    <column id="127" parent="93" name="REGION_ID">
       <Comment>Region ID for the country. Foreign key to region_id column in the departments table.</Comment>
       <DataType>NUMBER(*)|0s</DataType>
       <Position>3</Position>
     </column>
-    <foreign-key id="122" parent="89" name="COUNTR_REG_FK">
+    <foreign-key id="128" parent="93" name="COUNTR_REG_FK">
       <ColNames>REGION_ID</ColNames>
       <ModifiedTimestamp>2022-11-09.04:41:07</ModifiedTimestamp>
       <OnDelete>restrict</OnDelete>
       <RefKeyName>REG_ID_PK</RefKeyName>
       <RefTableName>REGIONS</RefTableName>
     </foreign-key>
-    <index id="123" parent="89" name="COUNTRY_C_ID_PK">
+    <index id="129" parent="93" name="COUNTRY_C_ID_PK">
       <Clustering>1</Clustering>
       <ColNames>COUNTRY_ID</ColNames>
       <CreatedTimestamp>2022-11-09.04:41:07</CreatedTimestamp>
@@ -732,25 +774,25 @@
       <Unique>1</Unique>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <key id="124" parent="89" name="COUNTRY_C_ID_PK">
+    <key id="130" parent="93" name="COUNTRY_C_ID_PK">
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2022-11-09.04:41:07</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>COUNTRY_C_ID_PK</UnderlyingIndexName>
     </key>
-    <check id="125" parent="90" name="DEPT_NAME_NN">
+    <check id="131" parent="94" name="DEPT_NAME_NN">
       <ColNames>DEPARTMENT_NAME</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2022-11-09.04:41:08</ModifiedTimestamp>
       <Predicate>&quot;DEPARTMENT_NAME&quot; IS NOT NULL</Predicate>
     </check>
-    <column id="126" parent="90" name="DEPARTMENT_ID">
+    <column id="132" parent="94" name="DEPARTMENT_ID">
       <Comment>Primary key column of departments table.</Comment>
       <DataType>NUMBER(4 digit)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="127" parent="90" name="DEPARTMENT_NAME">
+    <column id="133" parent="94" name="DEPARTMENT_NAME">
       <Comment>A not null column that shows name of a department. Administration,
          Marketing, Purchasing, Human Resources, Shipping, IT, Executive, Public
          Relations, Sales, Finance, and Accounting. </Comment>
@@ -758,31 +800,31 @@
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="128" parent="90" name="MANAGER_ID">
+    <column id="134" parent="94" name="MANAGER_ID">
       <Comment>Manager_id of a department. Foreign key to employee_id column of employees table. The manager_id column of the employee table references this column.</Comment>
       <DataType>NUMBER(6 digit)|0s</DataType>
       <Position>3</Position>
     </column>
-    <column id="129" parent="90" name="LOCATION_ID">
+    <column id="135" parent="94" name="LOCATION_ID">
       <Comment>Location id where a department is located. Foreign key to location_id column of locations table.</Comment>
       <DataType>NUMBER(4 digit)|0s</DataType>
       <Position>4</Position>
     </column>
-    <foreign-key id="130" parent="90" name="DEPT_MGR_FK">
+    <foreign-key id="136" parent="94" name="DEPT_MGR_FK">
       <ColNames>MANAGER_ID</ColNames>
       <ModifiedTimestamp>2022-11-09.04:41:09</ModifiedTimestamp>
       <OnDelete>restrict</OnDelete>
       <RefKeyName>EMP_EMP_ID_PK</RefKeyName>
       <RefTableName>EMPLOYEES</RefTableName>
     </foreign-key>
-    <foreign-key id="131" parent="90" name="DEPT_LOC_FK">
+    <foreign-key id="137" parent="94" name="DEPT_LOC_FK">
       <ColNames>LOCATION_ID</ColNames>
       <ModifiedTimestamp>2022-11-09.04:41:08</ModifiedTimestamp>
       <OnDelete>restrict</OnDelete>
       <RefKeyName>LOC_ID_PK</RefKeyName>
       <RefTableName>LOCATIONS</RefTableName>
     </foreign-key>
-    <index id="132" parent="90" name="DEPT_ID_PK">
+    <index id="138" parent="94" name="DEPT_ID_PK">
       <ColNames>DEPARTMENT_ID</ColNames>
       <CreatedTimestamp>2022-11-09.04:41:08</CreatedTimestamp>
       <ModifiedTimestamp>2022-11-09.04:41:08</ModifiedTimestamp>
@@ -790,137 +832,137 @@
       <Unique>1</Unique>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <index id="133" parent="90" name="DEPT_LOCATION_IX">
+    <index id="139" parent="94" name="DEPT_LOCATION_IX">
       <ColNames>LOCATION_ID</ColNames>
       <CreatedTimestamp>2022-11-09.04:41:09</CreatedTimestamp>
       <ModifiedTimestamp>2022-11-09.04:41:09</ModifiedTimestamp>
       <ObjectId>73596</ObjectId>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <key id="134" parent="90" name="DEPT_ID_PK">
+    <key id="140" parent="94" name="DEPT_ID_PK">
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2022-11-09.04:41:08</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>DEPT_ID_PK</UnderlyingIndexName>
     </key>
-    <check id="135" parent="91" name="EMP_EMAIL_NN">
+    <check id="141" parent="95" name="EMP_EMAIL_NN">
       <ColNames>EMAIL</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2022-11-09.04:41:08</ModifiedTimestamp>
       <Predicate>&quot;EMAIL&quot; IS NOT NULL</Predicate>
     </check>
-    <check id="136" parent="91" name="EMP_HIRE_DATE_NN">
+    <check id="142" parent="95" name="EMP_HIRE_DATE_NN">
       <ColNames>HIRE_DATE</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2022-11-09.04:41:08</ModifiedTimestamp>
       <Predicate>&quot;HIRE_DATE&quot; IS NOT NULL</Predicate>
     </check>
-    <check id="137" parent="91" name="EMP_JOB_NN">
+    <check id="143" parent="95" name="EMP_JOB_NN">
       <ColNames>JOB_ID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2022-11-09.04:41:08</ModifiedTimestamp>
       <Predicate>&quot;JOB_ID&quot; IS NOT NULL</Predicate>
     </check>
-    <check id="138" parent="91" name="EMP_LAST_NAME_NN">
+    <check id="144" parent="95" name="EMP_LAST_NAME_NN">
       <ColNames>LAST_NAME</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2022-11-09.04:41:08</ModifiedTimestamp>
       <Predicate>&quot;LAST_NAME&quot; IS NOT NULL</Predicate>
     </check>
-    <check id="139" parent="91" name="EMP_SALARY_MIN">
+    <check id="145" parent="95" name="EMP_SALARY_MIN">
       <ColNames>SALARY</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2022-11-09.04:41:08</ModifiedTimestamp>
       <Predicate>salary &gt; 0</Predicate>
     </check>
-    <column id="140" parent="91" name="EMPLOYEE_ID">
+    <column id="146" parent="95" name="EMPLOYEE_ID">
       <Comment>Primary key of employees table.</Comment>
       <DataType>NUMBER(6 digit)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="141" parent="91" name="FIRST_NAME">
+    <column id="147" parent="95" name="FIRST_NAME">
       <Comment>First name of the employee. A not null column.</Comment>
       <DataType>VARCHAR2(20 byte)|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="142" parent="91" name="LAST_NAME">
+    <column id="148" parent="95" name="LAST_NAME">
       <Comment>Last name of the employee. A not null column.</Comment>
       <DataType>VARCHAR2(25 byte)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="143" parent="91" name="EMAIL">
+    <column id="149" parent="95" name="EMAIL">
       <Comment>Email id of the employee</Comment>
       <DataType>VARCHAR2(25 byte)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="144" parent="91" name="PHONE_NUMBER">
+    <column id="150" parent="95" name="PHONE_NUMBER">
       <Comment>Phone number of the employee; includes country code and area code</Comment>
       <DataType>VARCHAR2(20 byte)|0s</DataType>
       <Position>5</Position>
     </column>
-    <column id="145" parent="91" name="HIRE_DATE">
+    <column id="151" parent="95" name="HIRE_DATE">
       <Comment>Date when the employee started on this job. A not null column.</Comment>
       <DataType>DATE|0s</DataType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
-    <column id="146" parent="91" name="JOB_ID">
+    <column id="152" parent="95" name="JOB_ID">
       <Comment>Current job of the employee; foreign key to job_id column of the
          jobs table. A not null column.</Comment>
       <DataType>VARCHAR2(10 byte)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>7</Position>
     </column>
-    <column id="147" parent="91" name="SALARY">
+    <column id="153" parent="95" name="SALARY">
       <Comment>Monthly salary of the employee. Must be greater
          than zero (enforced by constraint emp_salary_min)</Comment>
       <DataType>NUMBER(8,2 digit)|0s</DataType>
       <Position>8</Position>
     </column>
-    <column id="148" parent="91" name="COMMISSION_PCT">
+    <column id="154" parent="95" name="COMMISSION_PCT">
       <Comment>Commission percentage of the employee; Only employees in sales
          department elgible for commission percentage</Comment>
       <DataType>NUMBER(2,2 digit)|0s</DataType>
       <Position>9</Position>
     </column>
-    <column id="149" parent="91" name="MANAGER_ID">
+    <column id="155" parent="95" name="MANAGER_ID">
       <Comment>Manager id of the employee; has same domain as manager_id in
          departments table. Foreign key to employee_id column of employees table.
          (useful for reflexive joins and CONNECT BY query)</Comment>
       <DataType>NUMBER(6 digit)|0s</DataType>
       <Position>10</Position>
     </column>
-    <column id="150" parent="91" name="DEPARTMENT_ID">
+    <column id="156" parent="95" name="DEPARTMENT_ID">
       <Comment>Department id where employee works; foreign key to department_id
          column of the departments table</Comment>
       <DataType>NUMBER(4 digit)|0s</DataType>
       <Position>11</Position>
     </column>
-    <foreign-key id="151" parent="91" name="EMP_JOB_FK">
+    <foreign-key id="157" parent="95" name="EMP_JOB_FK">
       <ColNames>JOB_ID</ColNames>
       <ModifiedTimestamp>2022-11-09.04:41:08</ModifiedTimestamp>
       <OnDelete>restrict</OnDelete>
       <RefKeyName>JOB_ID_PK</RefKeyName>
       <RefTableName>JOBS</RefTableName>
     </foreign-key>
-    <foreign-key id="152" parent="91" name="EMP_MANAGER_FK">
+    <foreign-key id="158" parent="95" name="EMP_MANAGER_FK">
       <ColNames>MANAGER_ID</ColNames>
       <ModifiedTimestamp>2022-11-09.04:41:08</ModifiedTimestamp>
       <OnDelete>restrict</OnDelete>
       <RefKeyName>EMP_EMP_ID_PK</RefKeyName>
       <RefTableName>EMPLOYEES</RefTableName>
     </foreign-key>
-    <foreign-key id="153" parent="91" name="EMP_DEPT_FK">
+    <foreign-key id="159" parent="95" name="EMP_DEPT_FK">
       <ColNames>DEPARTMENT_ID</ColNames>
       <ModifiedTimestamp>2022-11-09.04:41:08</ModifiedTimestamp>
       <OnDelete>restrict</OnDelete>
       <RefKeyName>DEPT_ID_PK</RefKeyName>
       <RefTableName>DEPARTMENTS</RefTableName>
     </foreign-key>
-    <index id="154" parent="91" name="EMP_EMP_ID_PK">
+    <index id="160" parent="95" name="EMP_EMP_ID_PK">
       <ColNames>EMPLOYEE_ID</ColNames>
       <CreatedTimestamp>2022-11-09.04:41:08</CreatedTimestamp>
       <ModifiedTimestamp>2022-11-09.04:41:08</ModifiedTimestamp>
@@ -928,7 +970,7 @@
       <Unique>1</Unique>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <index id="155" parent="91" name="EMP_EMAIL_UK">
+    <index id="161" parent="95" name="EMP_EMAIL_UK">
       <ColNames>EMAIL</ColNames>
       <CreatedTimestamp>2022-11-09.04:41:08</CreatedTimestamp>
       <ModifiedTimestamp>2022-11-09.04:41:08</ModifiedTimestamp>
@@ -936,7 +978,7 @@
       <Unique>1</Unique>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <index id="156" parent="91" name="EMP_NAME_IX">
+    <index id="162" parent="95" name="EMP_NAME_IX">
       <ColNames>LAST_NAME
 FIRST_NAME</ColNames>
       <CreatedTimestamp>2022-11-09.04:41:09</CreatedTimestamp>
@@ -944,39 +986,39 @@ FIRST_NAME</ColNames>
       <ObjectId>73595</ObjectId>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <index id="157" parent="91" name="EMP_JOB_IX">
+    <index id="163" parent="95" name="EMP_JOB_IX">
       <ColNames>JOB_ID</ColNames>
       <CreatedTimestamp>2022-11-09.04:41:09</CreatedTimestamp>
       <ModifiedTimestamp>2022-11-09.04:41:09</ModifiedTimestamp>
       <ObjectId>73593</ObjectId>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <index id="158" parent="91" name="EMP_MANAGER_IX">
+    <index id="164" parent="95" name="EMP_MANAGER_IX">
       <ColNames>MANAGER_ID</ColNames>
       <CreatedTimestamp>2022-11-09.04:41:09</CreatedTimestamp>
       <ModifiedTimestamp>2022-11-09.04:41:09</ModifiedTimestamp>
       <ObjectId>73594</ObjectId>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <index id="159" parent="91" name="EMP_DEPARTMENT_IX">
+    <index id="165" parent="95" name="EMP_DEPARTMENT_IX">
       <ColNames>DEPARTMENT_ID</ColNames>
       <CreatedTimestamp>2022-11-09.04:41:09</CreatedTimestamp>
       <ModifiedTimestamp>2022-11-09.04:41:09</ModifiedTimestamp>
       <ObjectId>73592</ObjectId>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <key id="160" parent="91" name="EMP_EMP_ID_PK">
+    <key id="166" parent="95" name="EMP_EMP_ID_PK">
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2022-11-09.04:41:08</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>EMP_EMP_ID_PK</UnderlyingIndexName>
     </key>
-    <key id="161" parent="91" name="EMP_EMAIL_UK">
+    <key id="167" parent="95" name="EMP_EMAIL_UK">
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2022-11-09.04:41:08</ModifiedTimestamp>
       <UnderlyingIndexName>EMP_EMAIL_UK</UnderlyingIndexName>
     </key>
-    <trigger id="162" parent="91" name="SECURE_EMPLOYEES">
+    <trigger id="168" parent="95" name="SECURE_EMPLOYEES">
       <CreatedTimestamp>2022-11-09.04:41:09</CreatedTimestamp>
       <DependsOnIds>73603</DependsOnIds>
       <Events>IUD</Events>
@@ -985,7 +1027,7 @@ FIRST_NAME</ColNames>
       <SourceTextLength>45</SourceTextLength>
       <Turn>before-stmt</Turn>
     </trigger>
-    <trigger id="163" parent="91" name="UPDATE_JOB_HISTORY">
+    <trigger id="169" parent="95" name="UPDATE_JOB_HISTORY">
       <ColNames>JOB_ID
 DEPARTMENT_ID</ColNames>
       <CreatedTimestamp>2022-11-09.04:41:09</CreatedTimestamp>
@@ -996,35 +1038,35 @@ DEPARTMENT_ID</ColNames>
       <SourceTextLength>112</SourceTextLength>
       <Turn>after-row</Turn>
     </trigger>
-    <check id="164" parent="92" name="JOB_TITLE_NN">
+    <check id="170" parent="96" name="JOB_TITLE_NN">
       <ColNames>JOB_TITLE</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2022-11-09.04:41:08</ModifiedTimestamp>
       <Predicate>&quot;JOB_TITLE&quot; IS NOT NULL</Predicate>
     </check>
-    <column id="165" parent="92" name="JOB_ID">
+    <column id="171" parent="96" name="JOB_ID">
       <Comment>Primary key of jobs table.</Comment>
       <DataType>VARCHAR2(10 byte)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="166" parent="92" name="JOB_TITLE">
+    <column id="172" parent="96" name="JOB_TITLE">
       <Comment>A not null column that shows job title, e.g. AD_VP, FI_ACCOUNTANT</Comment>
       <DataType>VARCHAR2(35 byte)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="167" parent="92" name="MIN_SALARY">
+    <column id="173" parent="96" name="MIN_SALARY">
       <Comment>Minimum salary for a job title.</Comment>
       <DataType>NUMBER(6 digit)|0s</DataType>
       <Position>3</Position>
     </column>
-    <column id="168" parent="92" name="MAX_SALARY">
+    <column id="174" parent="96" name="MAX_SALARY">
       <Comment>Maximum salary for a job title</Comment>
       <DataType>NUMBER(6 digit)|0s</DataType>
       <Position>4</Position>
     </column>
-    <index id="169" parent="92" name="JOB_ID_PK">
+    <index id="175" parent="96" name="JOB_ID_PK">
       <ColNames>JOB_ID</ColNames>
       <CreatedTimestamp>2022-11-09.04:41:08</CreatedTimestamp>
       <ModifiedTimestamp>2022-11-09.04:41:08</ModifiedTimestamp>
@@ -1032,51 +1074,51 @@ DEPARTMENT_ID</ColNames>
       <Unique>1</Unique>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <key id="170" parent="92" name="JOB_ID_PK">
+    <key id="176" parent="96" name="JOB_ID_PK">
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2022-11-09.04:41:08</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>JOB_ID_PK</UnderlyingIndexName>
     </key>
-    <check id="171" parent="93" name="JHIST_EMPLOYEE_NN">
+    <check id="177" parent="97" name="JHIST_EMPLOYEE_NN">
       <ColNames>EMPLOYEE_ID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2022-11-09.04:41:08</ModifiedTimestamp>
       <Predicate>&quot;EMPLOYEE_ID&quot; IS NOT NULL</Predicate>
     </check>
-    <check id="172" parent="93" name="JHIST_END_DATE_NN">
+    <check id="178" parent="97" name="JHIST_END_DATE_NN">
       <ColNames>END_DATE</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2022-11-09.04:41:08</ModifiedTimestamp>
       <Predicate>&quot;END_DATE&quot; IS NOT NULL</Predicate>
     </check>
-    <check id="173" parent="93" name="JHIST_JOB_NN">
+    <check id="179" parent="97" name="JHIST_JOB_NN">
       <ColNames>JOB_ID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2022-11-09.04:41:08</ModifiedTimestamp>
       <Predicate>&quot;JOB_ID&quot; IS NOT NULL</Predicate>
     </check>
-    <check id="174" parent="93" name="JHIST_START_DATE_NN">
+    <check id="180" parent="97" name="JHIST_START_DATE_NN">
       <ColNames>START_DATE</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2022-11-09.04:41:08</ModifiedTimestamp>
       <Predicate>&quot;START_DATE&quot; IS NOT NULL</Predicate>
     </check>
-    <check id="175" parent="93" name="JHIST_DATE_INTERVAL">
+    <check id="181" parent="97" name="JHIST_DATE_INTERVAL">
       <ColNames>END_DATE
 START_DATE</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2022-11-09.04:41:08</ModifiedTimestamp>
       <Predicate>end_date &gt; start_date</Predicate>
     </check>
-    <column id="176" parent="93" name="EMPLOYEE_ID">
+    <column id="182" parent="97" name="EMPLOYEE_ID">
       <Comment>A not null column in the complex primary key employee_id+start_date.
          Foreign key to employee_id column of the employee table</Comment>
       <DataType>NUMBER(6 digit)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="177" parent="93" name="START_DATE">
+    <column id="183" parent="97" name="START_DATE">
       <Comment>A not null column in the complex primary key employee_id+start_date.
          Must be less than the end_date of the job_history table. (enforced by
          constraint jhist_date_interval)</Comment>
@@ -1084,7 +1126,7 @@ START_DATE</ColNames>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="178" parent="93" name="END_DATE">
+    <column id="184" parent="97" name="END_DATE">
       <Comment>Last day of the employee in this job role. A not null column. Must be
          greater than the start_date of the job_history table.
          (enforced by constraint jhist_date_interval)</Comment>
@@ -1092,40 +1134,40 @@ START_DATE</ColNames>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="179" parent="93" name="JOB_ID">
+    <column id="185" parent="97" name="JOB_ID">
       <Comment>Job role in which the employee worked in the past; foreign key to
          job_id column in the jobs table. A not null column.</Comment>
       <DataType>VARCHAR2(10 byte)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="180" parent="93" name="DEPARTMENT_ID">
+    <column id="186" parent="97" name="DEPARTMENT_ID">
       <Comment>Department id in which the employee worked in the past; foreign key to deparment_id column in the departments table</Comment>
       <DataType>NUMBER(4 digit)|0s</DataType>
       <Position>5</Position>
     </column>
-    <foreign-key id="181" parent="93" name="JHIST_EMP_FK">
+    <foreign-key id="187" parent="97" name="JHIST_EMP_FK">
       <ColNames>EMPLOYEE_ID</ColNames>
       <ModifiedTimestamp>2022-11-09.04:41:08</ModifiedTimestamp>
       <OnDelete>restrict</OnDelete>
       <RefKeyName>EMP_EMP_ID_PK</RefKeyName>
       <RefTableName>EMPLOYEES</RefTableName>
     </foreign-key>
-    <foreign-key id="182" parent="93" name="JHIST_JOB_FK">
+    <foreign-key id="188" parent="97" name="JHIST_JOB_FK">
       <ColNames>JOB_ID</ColNames>
       <ModifiedTimestamp>2022-11-09.04:41:08</ModifiedTimestamp>
       <OnDelete>restrict</OnDelete>
       <RefKeyName>JOB_ID_PK</RefKeyName>
       <RefTableName>JOBS</RefTableName>
     </foreign-key>
-    <foreign-key id="183" parent="93" name="JHIST_DEPT_FK">
+    <foreign-key id="189" parent="97" name="JHIST_DEPT_FK">
       <ColNames>DEPARTMENT_ID</ColNames>
       <ModifiedTimestamp>2022-11-09.04:41:08</ModifiedTimestamp>
       <OnDelete>restrict</OnDelete>
       <RefKeyName>DEPT_ID_PK</RefKeyName>
       <RefTableName>DEPARTMENTS</RefTableName>
     </foreign-key>
-    <index id="184" parent="93" name="JHIST_EMP_ID_ST_DATE_PK">
+    <index id="190" parent="97" name="JHIST_EMP_ID_ST_DATE_PK">
       <ColNames>EMPLOYEE_ID
 START_DATE</ColNames>
       <CreatedTimestamp>2022-11-09.04:41:08</CreatedTimestamp>
@@ -1134,84 +1176,84 @@ START_DATE</ColNames>
       <Unique>1</Unique>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <index id="185" parent="93" name="JHIST_EMPLOYEE_IX">
+    <index id="191" parent="97" name="JHIST_EMPLOYEE_IX">
       <ColNames>EMPLOYEE_ID</ColNames>
       <CreatedTimestamp>2022-11-09.04:41:09</CreatedTimestamp>
       <ModifiedTimestamp>2022-11-09.04:41:09</ModifiedTimestamp>
       <ObjectId>73598</ObjectId>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <index id="186" parent="93" name="JHIST_JOB_IX">
+    <index id="192" parent="97" name="JHIST_JOB_IX">
       <ColNames>JOB_ID</ColNames>
       <CreatedTimestamp>2022-11-09.04:41:09</CreatedTimestamp>
       <ModifiedTimestamp>2022-11-09.04:41:09</ModifiedTimestamp>
       <ObjectId>73597</ObjectId>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <index id="187" parent="93" name="JHIST_DEPARTMENT_IX">
+    <index id="193" parent="97" name="JHIST_DEPARTMENT_IX">
       <ColNames>DEPARTMENT_ID</ColNames>
       <CreatedTimestamp>2022-11-09.04:41:09</CreatedTimestamp>
       <ModifiedTimestamp>2022-11-09.04:41:09</ModifiedTimestamp>
       <ObjectId>73599</ObjectId>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <key id="188" parent="93" name="JHIST_EMP_ID_ST_DATE_PK">
+    <key id="194" parent="97" name="JHIST_EMP_ID_ST_DATE_PK">
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2022-11-09.04:41:08</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>JHIST_EMP_ID_ST_DATE_PK</UnderlyingIndexName>
     </key>
-    <check id="189" parent="94" name="LOC_CITY_NN">
+    <check id="195" parent="98" name="LOC_CITY_NN">
       <ColNames>CITY</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2022-11-09.04:41:07</ModifiedTimestamp>
       <Predicate>&quot;CITY&quot; IS NOT NULL</Predicate>
     </check>
-    <column id="190" parent="94" name="LOCATION_ID">
+    <column id="196" parent="98" name="LOCATION_ID">
       <Comment>Primary key of locations table</Comment>
       <DataType>NUMBER(4 digit)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="191" parent="94" name="STREET_ADDRESS">
+    <column id="197" parent="98" name="STREET_ADDRESS">
       <Comment>Street address of an office, warehouse, or production site of a company.
          Contains building number and street name</Comment>
       <DataType>VARCHAR2(40 byte)|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="192" parent="94" name="POSTAL_CODE">
+    <column id="198" parent="98" name="POSTAL_CODE">
       <Comment>Postal code of the location of an office, warehouse, or production site
          of a company. </Comment>
       <DataType>VARCHAR2(12 byte)|0s</DataType>
       <Position>3</Position>
     </column>
-    <column id="193" parent="94" name="CITY">
+    <column id="199" parent="98" name="CITY">
       <Comment>A not null column that shows city where an office, warehouse, or
          production site of a company is located. </Comment>
       <DataType>VARCHAR2(30 byte)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="194" parent="94" name="STATE_PROVINCE">
+    <column id="200" parent="98" name="STATE_PROVINCE">
       <Comment>State or Province where an office, warehouse, or production site of a
          company is located.</Comment>
       <DataType>VARCHAR2(25 byte)|0s</DataType>
       <Position>5</Position>
     </column>
-    <column id="195" parent="94" name="COUNTRY_ID">
+    <column id="201" parent="98" name="COUNTRY_ID">
       <Comment>Country where an office, warehouse, or production site of a company is
          located. Foreign key to country_id column of the countries table.</Comment>
       <DataType>CHAR(2 byte)|0s</DataType>
       <Position>6</Position>
     </column>
-    <foreign-key id="196" parent="94" name="LOC_C_ID_FK">
+    <foreign-key id="202" parent="98" name="LOC_C_ID_FK">
       <ColNames>COUNTRY_ID</ColNames>
       <ModifiedTimestamp>2022-11-09.04:41:07</ModifiedTimestamp>
       <OnDelete>restrict</OnDelete>
       <RefKeyName>COUNTRY_C_ID_PK</RefKeyName>
       <RefTableName>COUNTRIES</RefTableName>
     </foreign-key>
-    <index id="197" parent="94" name="LOC_ID_PK">
+    <index id="203" parent="98" name="LOC_ID_PK">
       <ColNames>LOCATION_ID</ColNames>
       <CreatedTimestamp>2022-11-09.04:41:07</CreatedTimestamp>
       <ModifiedTimestamp>2022-11-09.04:41:07</ModifiedTimestamp>
@@ -1219,51 +1261,88 @@ START_DATE</ColNames>
       <Unique>1</Unique>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <index id="198" parent="94" name="LOC_CITY_IX">
+    <index id="204" parent="98" name="LOC_CITY_IX">
       <ColNames>CITY</ColNames>
       <CreatedTimestamp>2022-11-09.04:41:09</CreatedTimestamp>
       <ModifiedTimestamp>2022-11-09.04:41:09</ModifiedTimestamp>
       <ObjectId>73600</ObjectId>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <index id="199" parent="94" name="LOC_STATE_PROVINCE_IX">
+    <index id="205" parent="98" name="LOC_STATE_PROVINCE_IX">
       <ColNames>STATE_PROVINCE</ColNames>
       <CreatedTimestamp>2022-11-09.04:41:09</CreatedTimestamp>
       <ModifiedTimestamp>2022-11-09.04:41:09</ModifiedTimestamp>
       <ObjectId>73601</ObjectId>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <index id="200" parent="94" name="LOC_COUNTRY_IX">
+    <index id="206" parent="98" name="LOC_COUNTRY_IX">
       <ColNames>COUNTRY_ID</ColNames>
       <CreatedTimestamp>2022-11-09.04:41:09</CreatedTimestamp>
       <ModifiedTimestamp>2022-11-09.04:41:09</ModifiedTimestamp>
       <ObjectId>73602</ObjectId>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <key id="201" parent="94" name="LOC_ID_PK">
+    <key id="207" parent="98" name="LOC_ID_PK">
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2022-11-09.04:41:07</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>LOC_ID_PK</UnderlyingIndexName>
     </key>
-    <check id="202" parent="95" name="REGION_ID_NN">
+    <column id="208" parent="99" name="ID">
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="209" parent="99" name="USER_ID">
+      <DataType>NUMBER(*)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="210" parent="99" name="FIRST_NAME">
+      <DataType>VARCHAR2(15 byte)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="211" parent="99" name="LAST_NAME">
+      <DataType>VARCHAR2(15 byte)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="212" parent="99" name="PHONE_NUMBER">
+      <DataType>VARCHAR2(15 byte)|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <index id="213" parent="99" name="SYS_C008037">
+      <ColNames>ID</ColNames>
+      <CreatedTimestamp>2023-01-03.18:51:34</CreatedTimestamp>
+      <ModifiedTimestamp>2023-01-03.18:51:34</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>76484</ObjectId>
+      <Unique>1</Unique>
+      <TablespaceName>USERS</TablespaceName>
+    </index>
+    <key id="214" parent="99" name="SYS_C008037">
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <ModifiedTimestamp>2023-01-03.18:51:34</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>SYS_C008037</UnderlyingIndexName>
+    </key>
+    <check id="215" parent="100" name="REGION_ID_NN">
       <ColNames>REGION_ID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2022-11-09.04:41:07</ModifiedTimestamp>
       <Predicate>&quot;REGION_ID&quot; IS NOT NULL</Predicate>
     </check>
-    <column id="203" parent="95" name="REGION_ID">
+    <column id="216" parent="100" name="REGION_ID">
       <Comment>Primary key of regions table.</Comment>
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="204" parent="95" name="REGION_NAME">
+    <column id="217" parent="100" name="REGION_NAME">
       <Comment>Names of regions. Locations are in the countries of these regions.</Comment>
       <DataType>VARCHAR2(25 byte)|0s</DataType>
       <Position>2</Position>
     </column>
-    <index id="205" parent="95" name="REG_ID_PK">
+    <index id="218" parent="100" name="REG_ID_PK">
       <ColNames>REGION_ID</ColNames>
       <CreatedTimestamp>2022-11-09.04:41:07</CreatedTimestamp>
       <ModifiedTimestamp>2022-11-09.04:41:07</ModifiedTimestamp>
@@ -1271,22 +1350,51 @@ START_DATE</ColNames>
       <Unique>1</Unique>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <key id="206" parent="95" name="REG_ID_PK">
+    <key id="219" parent="100" name="REG_ID_PK">
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2022-11-09.04:41:07</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>REG_ID_PK</UnderlyingIndexName>
     </key>
-    <column id="207" parent="96" name="ID">
+    <column id="220" parent="101" name="ID">
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="208" parent="96" name="NAME">
+    <column id="221" parent="101" name="PHONE_ID">
+      <DataType>NUMBER(*)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="222" parent="101" name="ROOM_NUMBER">
+      <DataType>NUMBER(*)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <index id="223" parent="101" name="SYS_C008036">
+      <ColNames>ID</ColNames>
+      <CreatedTimestamp>2023-01-03.18:46:48</CreatedTimestamp>
+      <ModifiedTimestamp>2023-01-03.19:01:00</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>76482</ObjectId>
+      <Unique>1</Unique>
+      <TablespaceName>USERS</TablespaceName>
+    </index>
+    <key id="224" parent="101" name="SYS_C008036">
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <ModifiedTimestamp>2023-01-03.18:46:48</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>SYS_C008036</UnderlyingIndexName>
+    </key>
+    <column id="225" parent="102" name="ID">
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="226" parent="102" name="NAME">
       <DataType>VARCHAR2(15 byte)|0s</DataType>
       <Position>2</Position>
     </column>
-    <index id="209" parent="96" name="SYS_C007958">
+    <index id="227" parent="102" name="SYS_C007958">
       <ColNames>ID</ColNames>
       <CreatedTimestamp>2022-12-30.02:12:57</CreatedTimestamp>
       <ModifiedTimestamp>2022-12-30.02:12:57</ModifiedTimestamp>
@@ -1295,35 +1403,35 @@ START_DATE</ColNames>
       <Unique>1</Unique>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <key id="210" parent="96" name="SYS_C007958">
+    <key id="228" parent="102" name="SYS_C007958">
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2022-12-30.02:12:57</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>SYS_C007958</UnderlyingIndexName>
     </key>
-    <check id="211" parent="97" name="NAME_NOT_NULL">
+    <check id="229" parent="103" name="NAME_NOT_NULL">
       <ColNames>NAME</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2022-12-28.01:31:24</ModifiedTimestamp>
       <Predicate>&quot;NAME&quot; IS NOT NULL</Predicate>
     </check>
-    <column id="212" parent="97" name="ID">
+    <column id="230" parent="103" name="ID">
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="213" parent="97" name="NAME">
+    <column id="231" parent="103" name="NAME">
       <DataType>VARCHAR2(15 byte)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="214" parent="97" name="COURSE">
+    <column id="232" parent="103" name="COURSE">
       <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <index id="215" parent="97" name="ID_PRIMARY_KEY">
+    <index id="233" parent="103" name="ID_PRIMARY_KEY">
       <ColNames>ID</ColNames>
       <CreatedTimestamp>2022-12-28.01:31:24</CreatedTimestamp>
       <ModifiedTimestamp>2022-12-28.01:31:56</ModifiedTimestamp>
@@ -1331,91 +1439,91 @@ START_DATE</ColNames>
       <Unique>1</Unique>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <key id="216" parent="97" name="ID_PRIMARY_KEY">
+    <key id="234" parent="103" name="ID_PRIMARY_KEY">
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2022-12-28.01:31:24</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>ID_PRIMARY_KEY</UnderlyingIndexName>
     </key>
-    <column id="217" parent="98" name="ID">
+    <column id="235" parent="104" name="ID">
       <DataType>NUMBER(*)|0s</DataType>
       <Position>1</Position>
     </column>
-    <column id="218" parent="98" name="NAME">
+    <column id="236" parent="104" name="NAME">
       <DataType>VARCHAR2(15 byte)|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="219" parent="99" name="EMPLOYEE_ID">
+    <column id="237" parent="105" name="EMPLOYEE_ID">
       <DataType>NUMBER(6 digit)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="220" parent="99" name="JOB_ID">
+    <column id="238" parent="105" name="JOB_ID">
       <DataType>VARCHAR2(10 byte)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="221" parent="99" name="MANAGER_ID">
+    <column id="239" parent="105" name="MANAGER_ID">
       <DataType>NUMBER(6 digit)|0s</DataType>
       <Position>3</Position>
     </column>
-    <column id="222" parent="99" name="DEPARTMENT_ID">
+    <column id="240" parent="105" name="DEPARTMENT_ID">
       <DataType>NUMBER(4 digit)|0s</DataType>
       <Position>4</Position>
     </column>
-    <column id="223" parent="99" name="LOCATION_ID">
+    <column id="241" parent="105" name="LOCATION_ID">
       <DataType>NUMBER(4 digit)|0s</DataType>
       <Position>5</Position>
     </column>
-    <column id="224" parent="99" name="COUNTRY_ID">
+    <column id="242" parent="105" name="COUNTRY_ID">
       <DataType>CHAR(2 byte)|0s</DataType>
       <Position>6</Position>
     </column>
-    <column id="225" parent="99" name="FIRST_NAME">
+    <column id="243" parent="105" name="FIRST_NAME">
       <DataType>VARCHAR2(20 byte)|0s</DataType>
       <Position>7</Position>
     </column>
-    <column id="226" parent="99" name="LAST_NAME">
+    <column id="244" parent="105" name="LAST_NAME">
       <DataType>VARCHAR2(25 byte)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>8</Position>
     </column>
-    <column id="227" parent="99" name="SALARY">
+    <column id="245" parent="105" name="SALARY">
       <DataType>NUMBER(8,2 digit)|0s</DataType>
       <Position>9</Position>
     </column>
-    <column id="228" parent="99" name="COMMISSION_PCT">
+    <column id="246" parent="105" name="COMMISSION_PCT">
       <DataType>NUMBER(2,2 digit)|0s</DataType>
       <Position>10</Position>
     </column>
-    <column id="229" parent="99" name="DEPARTMENT_NAME">
+    <column id="247" parent="105" name="DEPARTMENT_NAME">
       <DataType>VARCHAR2(30 byte)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>11</Position>
     </column>
-    <column id="230" parent="99" name="JOB_TITLE">
+    <column id="248" parent="105" name="JOB_TITLE">
       <DataType>VARCHAR2(35 byte)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>12</Position>
     </column>
-    <column id="231" parent="99" name="CITY">
+    <column id="249" parent="105" name="CITY">
       <DataType>VARCHAR2(30 byte)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>13</Position>
     </column>
-    <column id="232" parent="99" name="STATE_PROVINCE">
+    <column id="250" parent="105" name="STATE_PROVINCE">
       <DataType>VARCHAR2(25 byte)|0s</DataType>
       <Position>14</Position>
     </column>
-    <column id="233" parent="99" name="COUNTRY_NAME">
+    <column id="251" parent="105" name="COUNTRY_NAME">
       <DataType>VARCHAR2(40 byte)|0s</DataType>
       <Position>15</Position>
     </column>
-    <column id="234" parent="99" name="REGION_NAME">
+    <column id="252" parent="105" name="REGION_NAME">
       <DataType>VARCHAR2(25 byte)|0s</DataType>
       <Position>16</Position>
     </column>
-    <column id="235" parent="100" name="NAME">
+    <column id="253" parent="106" name="NAME">
       <DataType>VARCHAR2(15 byte)|0s</DataType>
       <Position>1</Position>
     </column>
