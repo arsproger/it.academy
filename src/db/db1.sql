@@ -43,3 +43,7 @@ insert into visits values
                        (3, current_date, 1);
 
 select * from visits order by time_visits desc;
+select * from client;
+select * from trainer;
+select * from visits;
+select * from type_sport_section;
